@@ -1,0 +1,103 @@
+body {
+  background: linear-gradient(45deg, #ff758c, #ff7eb3);
+  height: 100vh;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+}
+/*
+.floating-hearts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #fff;
+  animation: floatHearts 5s infinite linear alternate;
+}
+
+
+@keyframes floatHearts {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(-20px);
+  }
+}
+
+.envelope-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.envelope {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  background: #ff5252;
+  border-radius: 5px;
+}
+
+.flap {
+  z-index: 9999;
+  width: 100%;
+  height: 50%;
+  transition: transform 0.5s ease-in-out;
+}
+*/
+.body {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #ff5252;
+}
+
+.click-text {
+  text-align: center;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.scroll-message {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #c8c8c8;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4081;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.scroll-message.show {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.scroll-message img {
+  border: 15px solid #fff;
+  max-width: 200px;
+}
+
+.envelope-image img {
+  max-height: 300px;
+  max-width: 500px;
+  cursor: pointer;
+}
